@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+
+/*全端末（PC・タブレット・スマホ）共通設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #fff;	/*全体の文字色*/
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 15px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #1d1d1d url(../images/bg1.png);	/*背景色、背景画像の読み込み*/
+	-webkit-text-size-adjust: none;
+}
+/*トップページのbodyタグへの追加設定*/
+body#top {
+	background: #e6e2e0;		/*背景壁紙とグラデーション*/
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+iframe {width: 100%;}
+
+/*リンク（全般）設定
+---------------------------------------------------------------------------*/
+a {
+	color: #fff;	/*リンクテキストの色*/
+	transition: 0.5s;	/*マウスオン時の移り変わるまでの時間設定。0.5秒。*/
+}
+a:hover {
+	color: #ffcc00;			/*マウスオン時の文字色*/
+	text-decoration: none;	/*マウスオン時に下線を消す設定。残したいならこの１行削除。*/
+}
+
+/*inner共通
+---------------------------------------------------------------------------*/
+.inner {
+	max-width: 1200px;	/*サイトの最大幅*/
+	margin: 0 auto;
+}
+
+/*ヘッダー（ロゴが入った最上段のブロック）
+---------------------------------------------------------------------------*/
+/*ヘッダーブロック*/
+header {
+	height: 70px;	/*高さ*/
+	background: #000;	/*背景色*/
+	opacity: 0.7;
+}
+/*ロゴ画像*/
+header #logo {
+	display: block;
+	font-size: 30px;
+	float: left;	/*左に回り込み*/
+	padding-top: 10px;	/*ロゴの上にあける余白。上下のバランスをここで調整して下さい。*/
+}
+
+#management {
+	display: block;
+	font-size: 15px;
+	float: right;	/*左に回り込み*/
+	padding-top: 35px;	/*ロゴの上にあける余白。上下のバランスをここで調整して下さい。*/
+	cursor: pointer;
+}
+/*メインメニュー
+---------------------------------------------------------------------------*/
+/*メニューブロック*/
+#menubar {
+	clear: both;overflow: hidden;
+	background: #404040;	/*背景色（古いブラウザだとここの色のみが出ます）*/
+	background: linear-gradient(#404040, #0f0f0f);	/*グラデーション*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);		/*影の設定。右・下・ぼかし幅・色の設定*/
+	margin-bottom: 30px;	/*メニューブロックと下のコンテンツの間にあけるスペース*/
+}
+/*メニュー１個あたりの設定*/
+#menubar li {
+	float: left;	/*左に回り込み*/
+	width: 16.66%;	/*メニュー幅（100÷6個=16.66%）　もし４個にするなら100÷4=25%になる。*/
+}
+#menubar li a {
+	display:  block;text-decoration: none;
+	text-align: center;	/*文字を中央に*/
+	color: #fff;		/*文字色*/
+	font-weight: bold;	/*太字に*/
+	border-right: 1px solid #666;	/*メニューの右側の線の幅、線種、色（古いブラウザ用）*/
+	border-right: 1px solid rgba(255,255,255,0.15);	/*メニューの右側の線の幅、線種、色*/
+	line-height: 1.6;	/*行間を少し狭く*/
+	padding: 14px 0;	/*上下、左右へのメニュー内への余白*/
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.6);	/*ボックスの影。左へ、下へ、広げる幅、0,0,0は黒の事で0.6は透明度60%の事。*/
+	border-top: 2px solid transparent;	/*上の線の幅、線種、色。transparentは透明。*/
+}
+/*１つ目のメニューへの追加設定*/
+#menubar li:first-child a {
+	border-left: 1px solid #666;	/*メニューの左側の線の幅、線種、色（古いブラウザ用）*/
+	border-left: 1px solid rgba(255,255,255,0.15);	/*メニューの左側の線の幅、線種、色。255,255,255は白の事で0.15は透明度15%の事。*/
+}
+/*装飾文字の設定*/
+#menubar li a span {
+	text-shadow: none;display: block;
+	font-size: 9px;			/*文字サイズ*/
+	font-weight: normal;	/*文字を太字でなく標準に戻す設定*/
+	letter-spacing: 0.2em;	/*文字間隔を少しあける設定*/
+	opacity: 0.5;			/*透明度50％*/
+}
+/*マウスオン時、現在表示中(current)時*/
+#menubar li a:hover,#menubar li.current a {
+	background: #333;	/*背景色（古いブラウザだとここの色のみが出ます）*/
+	background: linear-gradient(#0f0f0f, #333);	/*グラデーション*/
+	border-top: 2px solid #ffcc00;	/*上のアクセント用の線の幅、線種、色*/
+}
+/*スマホ用メニューを表示させない*/
+#menubar-s {display: none;}
+/*３本バーアイコンを表示させない*/
+#menubar_hdr {display: none;}
+
+/*contents
+---------------------------------------------------------------------------*/
+.inner {
+	padding: 0px;
+	background-color: #f7f7f7;
+}
+
+.table {
+	color: #333;
+	margin-bottom: 40px;
+}
+
+.raw {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 20px;
+
+  }
+
+.colorform {
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+	padding: 20px 0px;
+}
+
+.names-colorform {
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+	padding: 20px 0px;
+	font-weight: bold;
+}
+
+.names {
+	text-align: center;
+	width: 100px;
+	padding: 55px 0px;
+	font-weight: bold;
+}
+
+.names-shoes {
+	text-align: center;
+	width: 100px;
+	padding: 25px 0px;
+	font-weight: bold;
+}
+
+.name {
+	display: block;
+}
+
+.slides {
+	max-width: 100px;
+}
+
+.items {
+	margin-bottom: 10px;
+}
+
+
+
+.names-comment {
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+	padding: 20px 0px;
+	font-weight: bold;
+}
+
+#trend-list {
+	cursor: pointer;
+}
+
+#trend-list:hover {
+	color: #ffcc00;
+	transition: 0.5s;
+}
+
+#accent-list {
+	cursor: pointer;
+}
+
+#accent-list:hover {
+	color: #ffcc00;
+	transition: 0.5s;
+}
+
+#seasonal-list {
+	cursor: pointer;
+}
+
+#seasonal-list:hover {
+	color: #ffcc00;
+	transition: 0.5s;
+}
+
+#seasonal-list {
+	cursor: pointer;
+}
+
+.slides {
+	cursor: pointer;
+}
+
+/*リスト*/
+
+.list-modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+
+}
+
+.modal {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  bottom: 5%;
+  background-color:white;
+  padding: 20px 0 20px;
+  border-radius: 10px;
+  width: 60%;
+  height: auto;
+  float: left;
+  overflow:hidden;
+  overflow-y:scroll;
+  color: #5f5d60;
+}
+
+
+
+.fa-times {
+  position: fixed;
+  top: 5%;
+  left: 76%;
+  z-index: 110;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.introduction {
+  width: 100%;
+}
+
+.introduction h1 {
+
+  letter-spacing: 1px;
+  margin: 30px 50px;
+  font-size: 30px;
+}
+
+.introduction h3 {
+  letter-spacing: 1px;
+  margin: 30px 50px;
+  font-size: 20px;
+}
+.introduction img {
+  width: 40%;
+  margin: 0px 50px;
+}
+
+.introduction p {
+  margin: 0px 30px 0px 10px;
+  margin: 20px 50px;
+}
+
+/*画像拡大*/
+
+.modal-pics {
+	position: absolute;
+	top: 5%;
+	left: 37%;
+	bottom: 5%;
+	padding: 20px 0 20px;
+	border-radius: 10px;
+	width: 40%;
+	height: auto;
+	float: left;
+  }
+
+#slide {
+	width: 70%;
+	height: auto;
+  }
+  
+.close-bottom {
+	position: absolute;
+	top: 4%;
+	left: 62%;
+	z-index: 110;
+	color: rgba(8, 8, 8, 0.13);
+	cursor: pointer;
+	font-size: 30px;
+}
