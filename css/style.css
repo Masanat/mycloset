@@ -128,6 +128,7 @@ header #logo {
 
 .table {
 	color: #333;
+	padding-bottom: 20px;
 	margin-bottom: 40px;
 }
 
@@ -135,46 +136,55 @@ header #logo {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 0px 20px;
+	text-align: center;
+	margin-right: 2%;
+	margin-left: 2%;
 
   }
 
 .colorform {
-	text-align: center;
 	vertical-align: middle;
 	width: 100px;
-	padding: 20px 0px;
+
 }
 
 .names-colorform {
-	text-align: center;
 	vertical-align: middle;
 	width: 100px;
-	padding: 20px 0px;
+
 	font-weight: bold;
 }
 
 .names {
-	text-align: center;
 	width: 100px;
-	padding: 55px 0px;
+	height: 150px;
 	font-weight: bold;
+	display: block;
 }
 
 .names-shoes {
-	text-align: center;
 	width: 100px;
-	padding: 25px 0px;
 	font-weight: bold;
 }
 
 .name {
 	display: block;
+	padding-top: 45%;
+
+}
+
+.slide-none {
+	display: block;
+	width: 100px;
+	height: 150px;
+	vertical-align: middle;
+
 }
 
 .slides {
 	max-width: 100px;
 }
+
 
 .items {
 	margin-bottom: 10px;
@@ -186,7 +196,6 @@ header #logo {
 	text-align: center;
 	vertical-align: middle;
 	width: 100px;
-	padding: 20px 0px;
 	font-weight: bold;
 }
 
