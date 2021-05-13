@@ -9,6 +9,7 @@
 <meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/slide.css">
+<link rel="stylesheet" href="responsive.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -40,11 +41,11 @@
 <nav id="menubar-s">
     <ul>
         <li><a href="index.html">March-May<span>11-20℃</span></a></li>
-        <li class="current"><a href="company.html">May-June<span>21-25℃</span></a></li>
-        <li><a href="service.html">June-September<span>26-35℃</span></a></li>
-        <li><a href="recruit.html">September-October<span>21-25℃</span></a></li>
-        <li><a href="link.html">October-Novenber<span>11-20℃</span></a></li>
-        <li><a href="contact.html">Novenber-March<span>0-10℃</span></a></li>
+        <li><a href="May-June.html">May-June<span>21-25℃</span></a></li>
+        <li class="current"><a href="June-September.html">June-September<span>26-35℃</span></a></li>
+        <li><a href="September-October.html">September-October<span>21-25℃</span></a></li>
+        <li><a href="October-Novenber.html">October-Novenber<span>11-20℃</span></a></li>
+        <li><a href="Novenber-March.html">Novenber-March<span>0-10℃</span></a></li>
     </ul>
 </nav>
 <!--PC用（801px以上端末）表-->
@@ -58,22 +59,22 @@
             </div>
             <div class="items">
                 <ul class="names-colorform">
-                    <li class="name active">Colored-<br>Tops</li>
+                    <li class="name active" id="tops-color">Colored-<br>Tops</li>
                 </ul>                    
             </div>
             <div class="items">
                 <ul class="names-colorform">
-                    <li class="name active">Colored-<br>Bottoms</li>
+                    <li class="name active" id="pants-color">Colored-<br>Bottoms</li>
                 </ul>                    
             </div>
             <div class="items">
                 <ul class="names-colorform">
-                    <li class="name active">Colored-<br>Outer<br>& Black</li>
+                    <li class="name active" id="out-color">Colored-<br>Outer<br>& Black</li>
                 </ul>                  
             </div>
             <div class="items">
                 <ul class="names-colorform">
-                    <li class="name active">Gradation</li>
+                    <li class="name active" id="gra-color">Gradation</li>
                 </ul>          
             </div>
             <div class="items">
@@ -88,12 +89,12 @@
             </div>
             <div class="items">
                 <ul class="names-colorform">
-                    <li class="name active">Monochrome<br>& one point</li>
+                    <li class="name active" id="mono-color">Monochrome<br>& one point</li>
                 </ul>         
             </div>
             <div class="items">
                 <ul class="names-colorform">
-                    <li class="name active">Same color</li>
+                    <li class="name active">Set-Up</li>
                 </ul>         
             </div>
         </div> 
@@ -126,12 +127,12 @@
             </div>
             <div class="items">
                 <ul class="slides">
-                    <li class="slide active"><img src="img/03_June_September/Screenshot_2019-08-13-01-48-28.png"></li>
+                    <li class="slide active"><img src="img/02_May_June/Screenshot_20210319-210658.png"></li>
                 </ul>                
             </div>
             <div class="items">
                 <ul class="slides">
-                    <li class="slide active"><img src="img/03_June_September/IMG_0002.jpg"></li>
+                    <li class="slide active"><img src="img/02_May_June/Screenshot_20210508-215001.png"></li>
                 </ul>                
             </div>
             <div class="items">
@@ -293,7 +294,7 @@
         <div id="raw-sub" class="raw">
             <div class="items">
                 <ul class="names">
-                    <li class="name active">Additional-color</li>
+                    <li class="name active" id="add-text">Add-color</li>
                 </ul>                
             </div>
             <div class="items">
@@ -313,7 +314,7 @@
             </div>
             <div class="items">
                 <ul class="slides">
-                    <li class="slide-none active"> <br> <br>Waiting</li>
+                    <li class="slide active"><img src="img/01_April_May/01b01f505822b706f254ec047540ddcbda3fc11848.jpg"></li>
                 </ul>                
             </div>
             <div class="items">
@@ -328,7 +329,7 @@
             </div>
             <div class="items">
                 <ul class="slides">
-                    <li class="slide active"><img src="img/01_April_May/01b01f505822b706f254ec047540ddcbda3fc11848.jpg"></li>
+                    <li class="slide active"><img src="img/03_June_September/Screenshot_2019-08-13-01-51-03.png"></li>
                 </ul>                
             </div>
             <div class="items">
@@ -341,7 +342,12 @@
         <div id="raw-sub" class="raw">
             <div class="items">
                 <ul class="names">
-                    <li class="name active" id="want">( want )</li>
+                    <li class="name active" id="want">want*</li>
+                </ul>                
+            </div>
+            <div class="items">
+                <ul class="slides">
+                    <li class="slide active"><img src="img/01_April_May/sb-890598.jpg"></li>
                 </ul>                
             </div>
             <div class="items">
@@ -351,12 +357,7 @@
             </div>
             <div class="items">
                 <ul class="slides">
-                    <li class="slide-none active"> <br> <br>none</li>
-                </ul>                
-            </div>
-            <div class="items">
-                <ul class="slides">
-                    <li class="slide-none active"> <br> <br>none</li>
+                    <li class="slide active"><img src="img/03_June_September/Screenshot_20210510-190802.png"></li>
                 </ul>                
             </div>
             <div class="items">
@@ -389,17 +390,17 @@
         <div id="raw-color" class="raw">
             <div id="accent-list" class="items">
                 <ul class="names-comment">
-                    <li class="name active">Accent</li>
+                    <li class="name active" id="accent-text">Accent</li>
                 </ul>                
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Pastel color</li>
+                    <li class="name active">Big pocket</li>
                 </ul>                    
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Logo</li>
+                    <li class="name active">Button</li>
                 </ul>                    
             </div>
             <div class="items">
@@ -409,17 +410,17 @@
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Check</li>
+                    <li class="name active">Pattern</li>
                 </ul>          
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Print</li>
+                    <li class="name active">Stripe</li>
                 </ul>                    
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Mock neck</li>
+                    <li class="name active">Big pocket</li>
                 </ul>         
             </div>
             <div class="items">
@@ -447,22 +448,22 @@
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Wide pants<br>Neon color</li>
+                    <li class="name active">Wide pants</li>
                 </ul>                    
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">-</li>
+                    <li class="name active">Utility</li>
                 </ul>                  
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Roll up</li>
+                    <li class="name active">Pattern</li>
                 </ul>          
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Roll up</li>
+                    <li class="name active">-</li>
                 </ul>                    
             </div>
             <div class="items">
@@ -477,7 +478,7 @@
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Blazer<br>Neon color</li>
+                    <li class="name active">Wide pants</li>
                 </ul>         
             </div>
         </div> 
@@ -485,27 +486,27 @@
         <div id="raw-color" class="raw">
             <div id="seasonal-list" class="items">
                 <ul class="names-comment">
-                    <li class="name active">Seasonal-feeling</li>
+                    <li class="name active" id="sea-text">Season</li>
                 </ul>                
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">Pastel color</li>
+                    <li class="name active">Pastel color<br>Linen</li>
                 </ul>                    
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">-</li>
+                    <li class="name active">Sandal</li>
                 </ul>                    
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">-</li>
+                    <li class="name active">Sandal</li>
                 </ul>                  
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">-</li>
+                    <li class="name active">Sandal</li>
                 </ul>          
             </div>
             <div class="items">
@@ -515,17 +516,17 @@
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">-</li>
+                    <li class="name active">Linen</li>
                 </ul>         
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">-</li>
+                    <li class="name active">Linen</li>
                 </ul>         
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">-</li>
+                    <li class="name active">Linen<br>Sandal</li>
                 </ul>         
             </div>
         </div> 
@@ -533,13 +534,8 @@
         <div id="raw-color" class="raw">
             <div class="items">
                 <ul class="names-comment">
-                    <li class="name active">Silhouette</li>
+                    <li class="name active" id="out-text">Outline</li>
                 </ul>                
-            </div>
-            <div class="items">
-                <ul class="colorform">
-                    <li class="name active">A</li>
-                </ul>                    
             </div>
             <div class="items">
                 <ul class="colorform">
@@ -548,12 +544,17 @@
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">I</li>
-                </ul>                  
+                    <li class="name active">A</li>
+                </ul>                    
             </div>
             <div class="items">
                 <ul class="colorform">
                     <li class="name active">Y</li>
+                </ul>                  
+            </div>
+            <div class="items">
+                <ul class="colorform">
+                    <li class="name active">A</li>
                 </ul>          
             </div>
             <div class="items">
@@ -563,17 +564,17 @@
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">A</li>
-                </ul>         
-            </div>
-            <div class="items">
-                <ul class="colorform">
-                    <li class="name active">Y</li>
+                    <li class="name active">H</li>
                 </ul>         
             </div>
             <div class="items">
                 <ul class="colorform">
                     <li class="name active">I</li>
+                </ul>         
+            </div>
+            <div class="items">
+                <ul class="colorform">
+                    <li class="name active">A</li>
                 </ul>         
             </div>
         </div> 
@@ -596,7 +597,7 @@
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">3</li>
+                    <li class="name active">4</li>
                 </ul>                  
             </div>
             <div class="items">
@@ -616,12 +617,12 @@
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">4</li>
+                    <li class="name active">5</li>
                 </ul>         
             </div>
             <div class="items">
                 <ul class="colorform">
-                    <li class="name active">2</li>
+                    <li class="name active">4</li>
                 </ul>         
             </div>
         </div> 
@@ -731,21 +732,20 @@
 
           <h3>２，買い物を効率よく</h3>
           <p>　・必要なアイテムの把握</p>
-          <p>　・アップデートすべきアイテムの把握（古い/トレンド落ち/気に入らない）</p>
+          <p>　・買い替えたいアイテムの把握（古い/トレンド落ち/気に入らない）</p>
 
-          <h3>３，常に80点以上のコーディネート</h3>
+          <h3>３，個性や趣向より万人受けを最優先</h3>
 
-          <h3>４，最低限のアイテム数で幅広いコーディネート数</h3>
-          <h3>　</h3>
+          <h3>４，最低限のアイテム数で幅広い着回し</h3>
 
           <h1>Run</h1>
 
-          <p>・各気温６区間に対して基本８コーデ×２（色追加）を構築＝週末着用で２カ月間かぶらない</p>
+          <p>・各気温６区間に対して基本８型×２（色追加）を構築＝週末着用で２カ月間かぶらない</p>
           <p>・配色はモノトーン+３色以内（色選定はパーソナルカラーに基づく）</p>
-          <p>・配色/アクセント/トレンド/季節感/シルエットを幅広く多様化</p>
-          <p>・トレンドや人気コーデを毎シーズン調査して再構築</p>
-          <p>・構築したコーディネートに対して不足しているアイテムを購入する</p>
-          <p>・古いアイテム（５年前以上）やトレンド落ちまたは気に入らないアイテムを買い換える</p>
+          <p>・配色/アクセント/トレンド/季節感/シルエットを多様に配置</p>
+          <p>・トレンドや人気のあるコーデイネートを毎シーズン調査してアップデート</p>
+          <p>・構築したコーディネートに対して不足しているアイテムを購入</p>
+          <p>・古いアイテム（５年前以上）やトレンド落ちまたは気に入らないアイテムを買い換え</p>
 
         </div>
     </div>
@@ -764,7 +764,9 @@
         </div>
     </div>
 </div>
-    
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+
 
 <script src="script.js"></script>
 </body>

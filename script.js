@@ -71,6 +71,8 @@ $(function() {
     
   });
 
+
+
     // 画像拡大（クリック）
 
 $(function() {
@@ -83,6 +85,23 @@ $(function() {
     $('.close-modal').click(function() {
       $('#modal-img').fadeOut();
     });
+    
+  });
+
+// responsive;menubar（クリック）
+
+  $(function() {
+    
+    $('#menubar_hdr').click(function() {
+      $('#menubar-s').fadeIn();
+      //$('#menubar_hdr.open').fadeOut();
+      //$('#menubar_hdr.close').fadeIn();
+    });    
+//    $('#menubar_hdr.close').click(function() {
+//      $('#menubar-s').fadeOut();
+//      $('#menubar_hdr.open').fadeIn();
+//      $('#menubar_hdr.close').fadeOut();
+    //});
     
   });
   
