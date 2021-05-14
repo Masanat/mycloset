@@ -29,9 +29,11 @@ $(function() {
     
     $('#trend-list').click(function() {
       $('#modal-trend').fadeIn();
+      $('body,html').css('overflow-y', 'hidden');
     });    
     $('.close-modal').click(function() {
       $('#modal-trend').fadeOut();
+      $('body,html').css('overflow-y', 'visible');
     });
     
   });
@@ -40,9 +42,11 @@ $(function() {
     
     $('#accent-list').click(function() {
       $('#modal-accent').fadeIn();
+      $('body,html').css('overflow-y', 'hidden');
     });    
     $('.close-modal').click(function() {
       $('#modal-accent').fadeOut();
+      $('body,html').css('overflow-y', 'visible');
     });
     
   });
@@ -51,9 +55,11 @@ $(function() {
     
     $('#seasonal-list').click(function() {
       $('#modal-seasonal').fadeIn();
+      $('body,html').css('overflow-y', 'hidden');
     });    
     $('.close-modal').click(function() {
       $('#modal-seasonal').fadeOut();
+      $('body,html').css('overflow-y', 'visible');
     });
     
   });
@@ -64,9 +70,11 @@ $(function() {
     
     $('#management').click(function() {
       $('#modal-what').fadeIn();
+      $('body,html').css('overflow-y', 'hidden');
     });    
     $('.close-modal').click(function() {
       $('#modal-what').fadeOut();
+      $('body,html').css('overflow-y', 'visible');
     });
     
   });
@@ -77,11 +85,15 @@ $(function() {
 
 $(function() {
     
-    $('.moveimg').click(function() {
-      var imgname = $(this).attr('src');
-//      $('#widepic').attr('src', 'imgname');
-      $('#modal-img').fadeIn();
-    });    
+    //$('.items ul li').click(function() {
+      //var imgSrc = $(this).children().attr('src');
+     // $('.items-wide ul li').children().attr('src', imgSrc);
+     // $('#modal-img').fadeIn();
+      
+      //$('body,html').css('overflow-y', 'hidden');
+      //return false
+
+ 
     $('.close-modal').click(function() {
       $('#modal-img').fadeOut();
     });

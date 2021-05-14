@@ -208,6 +208,14 @@
         content:'Mono & point';
     }  
     
+    #thinouter {
+        font-size:0;
+    }
+    #thinouter:before {
+        font-size:10px;
+        content:'Outer';
+    }  
+
     /*テキスト書き換えcolum*/    
 
 
