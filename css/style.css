@@ -128,6 +128,7 @@ header #logo {
 
 .table {
 	color: #333;
+	padding-top: 10px;
 	padding-bottom: 20px;
 	margin-bottom: 40px;
 }
@@ -143,16 +144,16 @@ header #logo {
   }
 
 .colorform {
-	vertical-align: middle;
 	width: 100px;
-
 }
 
 .names-colorform {
-	vertical-align: middle;
 	width: 100px;
-
 	font-weight: bold;
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .names {
@@ -160,16 +161,19 @@ header #logo {
 	height: 150px;
 	font-weight: bold;
 	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .names-shoes {
 	width: 100px;
 	font-weight: bold;
+	
 }
 
 .name {
 	display: block;
-	padding-top: 45%;
 
 }
 
@@ -185,9 +189,21 @@ header #logo {
 	max-width: 100px;
 }
 
+.slide {
+	display: none;
+}
+
+.active {
+	display: block;
+}
 
 .items {
 	margin-bottom: 10px;
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
 
@@ -304,6 +320,18 @@ header #logo {
 
 /*画像拡大*/
 
+.img-modal-wrapper {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 100;
+  
+  }
+
 .modal-pics {
 	position: absolute;
 	top: 5%;
@@ -316,17 +344,38 @@ header #logo {
 	float: left;
   }
 
-#slide {
+.slides-wide {
 	width: 70%;
 	height: auto;
-  }
-  
-.close-bottom {
+}
+
+.slide-wide img {
+	width: 500px;
+	height: auto;
+}
+
+.close-bottom{
 	position: absolute;
 	top: 4%;
-	left: 62%;
+	left: 59%;
 	z-index: 110;
-	color: rgba(8, 8, 8, 0.13);
-	cursor: pointer;
 	font-size: 30px;
+
+    font-weight: bold;
+    border: 1px solid #999;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 1.3em;
+    line-height: 1.3em;
+    cursor: pointer;
+    transition: .2s;
+}
+    
+.close-bottom:hover{
+    background: #333;
+    border-color: #333;
+    color: #FFF;
 }
