@@ -14,6 +14,10 @@
 <!--slick-->
 <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<!--Wheather-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./mamewaza_weather/mamewaza_weather.css" />
+
 </head>
 
 <body id="top">
@@ -37,7 +41,7 @@
     </ul>
 </nav>
 <!--小さな端末用（800px以下端末）メニュー-->
-<nav id="menubar-s">
+<nav id="menubar-s" class="menubar-s active">
     <ul>
         <li><a href="index.html">March-May<span>11-20℃</span></a></li>
         <li class="current"><a href="May-June.html">May-June<span>21-25℃</span></a></li>
@@ -47,6 +51,26 @@
         <li><a href="Novenber-March.html">Novenber-March<span>0-10℃</span></a></li>
     </ul>
 </nav>
+
+<!--天気-->
+<div class="inner-w">
+    <div id="mamewaza_weather" style="width:500px" class="mamewaza_weather"></div>
+
+    <script type="text/javascript" src="./mamewaza_weather/mamewaza_weather.min.js"></script>
+    <script type="text/javascript">
+    $.mamewaza_weather( {
+        selector: "#mamewaza_weather",
+        region:"230000",
+        layout:"horizontalMicro",
+        when:"weekend"
+    } );
+    </script>
+</div>
+
+<!--Table_blank Raw-->           
+<div class="raw-blank-w">
+</div>
+
 <!--PC用（801px以上端末）表-->
 <div id="contents" class="inner">
     <div id="table-one" class="table">
@@ -149,7 +173,7 @@
         <div id="raw-sub" class="raw">
             <div class="items">
                 <ul class="names">
-                    <li class="name active">Bottoms</li>
+                    <li class="name active" id="pants">Bottoms</li>
                 </ul>                
             </div>
             <div class="items">
@@ -245,7 +269,7 @@
         <div id="raw-sub" class="raw">
             <div class="items">
                 <ul class="names">
-                    <li class="name active">Thin-Outer</li>
+                    <li class="name active">Outer</li>
                 </ul>                
             </div>
             <div class="items">
@@ -289,6 +313,11 @@
                 </ul>                
             </div>
         </div>
+        
+        <!--Table_blank Raw-->           
+        <div class="raw-blank">
+        </div>
+
         <!--Table_Additional_color-->           
         <div id="raw-sub" class="raw">
             <div class="items">
@@ -337,6 +366,11 @@
                 </ul>                
             </div>
         </div>
+        
+        <!--Table_blank Raw-->           
+        <div class="raw-blank">
+        </div>
+
         <!--Table_want-->           
         <div id="raw-sub" class="raw">
             <div class="items">
@@ -385,8 +419,13 @@
                 </ul>                
             </div>
         </div>
+        
+        <!--Table_blank Raw-->           
+        <div class="raw-blank-responsive">
+        </div>
+
 <!--コメント　Accent-->
-        <div id="raw-color" class="raw">
+        <div id="raw-color" class="raw-none">
             <div id="accent-list" class="items">
                 <ul class="names-comment">
                     <li class="name active" id="accent-text">Accent</li>
@@ -434,7 +473,7 @@
             </div>
         </div> 
 <!--コメント　Trend-->
-        <div id="raw-color" class="raw">
+        <div id="raw-color" class="raw-none">
             <div id="trend-list" class="items">
                 <ul class="names-comment">
                     <li class="name active">Trend</li>
@@ -482,7 +521,7 @@
             </div>
         </div> 
 <!--コメント　季節感-->
-        <div id="raw-color" class="raw">
+        <div id="raw-color" class="raw-none">
             <div id="seasonal-list" class="items">
                 <ul class="names-comment">
                     <li class="name active" id="sea-text">Season</li>
@@ -530,7 +569,7 @@
             </div>
         </div> 
 <!--コメント　シルエット-->
-        <div id="raw-color" class="raw">
+        <div id="raw-color" class="raw-none">
             <div class="items">
                 <ul class="names-comment">
                     <li class="name active" id="out-text">Outline</li>
@@ -577,6 +616,11 @@
                 </ul>         
             </div>
         </div> 
+        
+        <!--Table_blank Raw-->           
+        <div class="raw-blank">
+        </div>
+
 <!--コメント　レベル-->
         <div id="raw-level" class="raw">
             <div class="items">
@@ -628,6 +672,18 @@
     </div>
 </div>
 <!--Table_fin--> 
+
+<!--footer--> 
+
+<footer>
+    <div class="inner">
+        <a class="list-res" id="seasonal-list-res">Seasonal</a>
+        <a class="list-res" id="trend-list-res">Trend</a>
+        <a class="list-res" id="acce-list-res">Accent</a>
+        <p id="copyright">copyright@tokunaga</p>
+    </div>
+</footer>
+
 <!-- アクセント一覧-->
 <div class="list-modal-wrapper" id="modal-accent">
     <div class="modal">
@@ -889,6 +945,7 @@
         <div class="items-wide">
             <ul class="slides-wide" id="slides">
                 <li class="slide-wide active"><img class=moveimg src="img/01_April_May/01f0f6398307ca93589b0ecb5e8a4f1ebdbc3cfab2.jpg"></li>
+                <li class="slide-wide active"><img class=moveimg src="img/03_June_September/スクリーンショット (23).png"></li>
             </ul>                
         </div>
     </div>

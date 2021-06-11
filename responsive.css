@@ -22,6 +22,12 @@
         margin: 0 auto;
     }
     
+    .inner-w {
+        width: 95%;	/*サイトの最大幅*/
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    
     /*ヘッダー（ロゴが入った最上段のブロック）
     ---------------------------------------------------------------------------*/
     /*ヘッダーブロック*/
@@ -80,6 +86,33 @@
 	display: none;
 }
 
+
+/*フッダー
+---------------------------------------------------------------------------*/
+/*フッダーブロック*/
+footer {
+    max-height: 50px;
+	background: #000;	/*背景色*/
+	opacity: 0.7;
+    margin-top: 50px;
+}
+/*ロゴ画像*/
+#copyright {
+	display: block;
+	font-size: 10px;
+	float: left;	/*左に回り込み*/
+	padding-top: 5px;	/*ロゴの上にあける余白。上下のバランスをここで調整して下さい。*/
+}
+
+.list-res {
+	display: block;
+	font-size: 10px;
+	float: right;	/*左に回り込み*/
+	padding: 5px 0px 0px 15px;	/*ロゴの上にあける余白。上下のバランスをここで調整して下さい。*/
+	cursor: pointer;
+    border: 2px ridge #000;
+}
+
 /*３本バーアイコン設定
 ---------------------------------------------------------------------------*/
 /*３本バーブロック*/
@@ -115,15 +148,21 @@
     
     .table {
         padding-bottom: 5px;
+        padding-top: 0px;
         margin-bottom: 10px;
-        margin-top: 70px;
+        margin-top: 0px;
     }
     
     .raw {
         margin-right: 2%;
         margin-left: 2%;
 
-      }
+    }
+
+    .raw-none {
+        display: none;
+
+    }    
     
     .colorform {
         width: 20px;
@@ -132,19 +171,24 @@
     
     .names-colorform {
         width: 20px;
+
     }
     
     .names {
-        width: 20px;
+        width: 25px;
         height: 30px;
     }
     
     .names-shoes {
-        width: 20px;
+        width: 25px;
     }
     
     .name {
-        padding-top: 45%;
+        padding-top: 20%;
+        padding-bottom: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .slide-none {
@@ -167,6 +211,21 @@
     .names-comment {
         width: 20px;
     }
+
+    .raw-blank-responsive {
+        display: none;
+    }
+
+    .raw-blank {
+        height: 10px;
+        margin: 0px 0px 5px 0px;
+    }
+    
+    .raw-blank-w {
+        height: 10px;
+        margin: 0px 0px;
+    }
+
     /*テキスト書き換えrow*/
 
     #tops-color {
@@ -174,7 +233,7 @@
     }
     #tops-color:before {
         font-size:10px;
-        content:'Tops';
+        content:'Color Tops';
     }
 
     #pants-color {
@@ -182,7 +241,7 @@
     }
     #pants-color:before {
         font-size:10px;
-        content:'Pants';
+        content:'Color Pants';
     }
     #out-color {
         font-size:0;
@@ -215,6 +274,17 @@
         font-size:10px;
         content:'Outer';
     }  
+
+    
+    #pants {
+        font-size:0;
+    }
+    #pants:before {
+        font-size:10px;
+        content:'Pants';
+    }  
+
+    
 
     /*テキスト書き換えcolum*/    
 
@@ -301,7 +371,7 @@
     
       letter-spacing: 1px;
       margin: 20px 10px;
-      font-size: 5px;
+      font-size: 15px;
     }
     
     .introduction h3 {
@@ -340,10 +410,10 @@
       
     .close-bottom {
         position: absolute;
-        top: 3%;
+        top: 5%;
         left: 60%;
         z-index: 110;
-        color: rgba(8, 8, 8, 0.13);
         cursor: pointer;
-        font-size: 30px;
+        font-size: 20px;
     }
+

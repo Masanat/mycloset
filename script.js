@@ -64,6 +64,48 @@ $(function() {
     
   });
 
+    // 一覧（クリック）;レスポンシブ対応
+  
+  
+  $(function() {
+    
+    $('#trend-list-res').click(function() {
+      $('#modal-trend').fadeIn();
+      $('body,html').css('overflow-y', 'hidden');
+    });    
+    $('.close-modal').click(function() {
+      $('#modal-trend').fadeOut();
+      $('body,html').css('overflow-y', 'visible');
+    });
+    
+  });
+
+  $(function() {
+    
+    $('#acce-list-res').click(function() {
+      $('#modal-accent').fadeIn();
+      $('body,html').css('overflow-y', 'hidden');
+    });    
+    $('.close-modal').click(function() {
+      $('#modal-accent').fadeOut();
+      $('body,html').css('overflow-y', 'visible');
+    });
+    
+  });
+
+  $(function() {
+    
+    $('#seasonal-list-res').click(function() {
+      $('#modal-seasonal').fadeIn();
+      $('body,html').css('overflow-y', 'hidden');
+    });    
+    $('.close-modal').click(function() {
+      $('#modal-seasonal').fadeOut();
+      $('body,html').css('overflow-y', 'visible');
+    });
+    
+  });
+
     // 概要（クリック）
 
   $(function() {
@@ -510,22 +552,20 @@ $(function() {
 // responsive;menubar（クリック）
 
   $(function() {
-    
-    $('#menubar_hdr').click(function() {
+      
+  $('#menubar_hdr').click(function(){
+    if( $('.menubar-s').hasClass('active') ){
       $('#menubar-s').fadeIn();
-      //$('#menubar_hdr.open').fadeOut();
-      //$('#menubar_hdr.close').fadeIn();
-    }); 
-  });   
-//    $('#menubar_hdr.close').click(function() {
-//      $('#menubar-s').fadeOut();
-//      $('#menubar_hdr.open').fadeIn();
-//      $('#menubar_hdr.close').fadeOut();
-    //});
-    
-  //});
-  
-//});
+      $('.menubar-s').removeClass('active');
+      $(this).addClass('open').removeClass('close');
+    }else {
+      $('#menubar-s').fadeOut();
+      $('.menubar-s').addClass('active');
+      $(this).addClass('close').removeClass('open'); 
+    }
+  })      
 
+
+  });
 });
 
