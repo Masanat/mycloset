@@ -119,6 +119,29 @@ header #logo {
 /*３本バーアイコンを表示させない*/
 #menubar_hdr {display: none;}
 
+/*フッダー
+---------------------------------------------------------------------------*/
+/*フッダーブロック*/
+footer {
+	height: 70px;	/*高さ*/
+	background: #000;	/*背景色*/
+	opacity: 0.7;
+}
+/*ロゴ画像*/
+#copyright {
+	display: block;
+	font-size: 20px;
+	float: left;	/*左に回り込み*/
+	padding-top: 10px;	/*ロゴの上にあける余白。上下のバランスをここで調整して下さい。*/
+}
+
+.list-res {
+	display: none;
+	font-size: 10px;
+	float: right;	/*左に回り込み*/
+	padding-top: 35px;	/*ロゴの上にあける余白。上下のバランスをここで調整して下さい。*/
+	cursor: pointer;
+}
 /*contents
 ---------------------------------------------------------------------------*/
 .inner {
@@ -129,7 +152,6 @@ header #logo {
 .table {
 	color: #333;
 	padding-top: 10px;
-	padding-bottom: 20px;
 	margin-bottom: 40px;
 }
 
@@ -141,6 +163,15 @@ header #logo {
 	margin-right: 2%;
 	margin-left: 2%;
 
+  }
+
+.raw-none {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	margin-right: 2%;
+	margin-left: 2%;
   }
 
 .colorform {
@@ -182,7 +213,7 @@ header #logo {
 	width: 100px;
 	height: 150px;
 	vertical-align: middle;
-
+	cursor: default;
 }
 
 .slides {
@@ -318,6 +349,23 @@ header #logo {
   margin: 20px 50px;
 }
 
+.raw-blank {
+	height: 20px;
+	background: #e6e2e0;		/*背景壁紙とグラデーション*/
+	margin: 10px 0px;
+}
+
+.raw-blank-w {
+	height: 20px;
+	background: #e6e2e0;		/*背景壁紙とグラデーション*/
+}
+
+.raw-blank-responsive {
+	height: 20px;
+	background: #e6e2e0;		/*背景壁紙とグラデーション*/
+	margin: 10px 0px;
+}
+
 /*画像拡大*/
 
 .img-modal-wrapper {
@@ -378,4 +426,16 @@ header #logo {
     background: #333;
     border-color: #333;
     color: #FFF;
+}
+
+/*tennki*/
+.inner-w {
+	max-width: 1200px;	/*サイトの最大幅*/
+	margin: 0 auto;
+	padding: 0px;
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
 }
