@@ -251,7 +251,7 @@ footer {
 	display: block;
 	width: 100px;
 	height: 150px;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 	cursor: default;
 }
 
